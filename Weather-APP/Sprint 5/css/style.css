@@ -1,0 +1,111 @@
+/*EN MI DEFENSA DIRÉ QUE EL DISEÑO WEB ES UN ASCO Y NO CONTROLO NA' DE NA'*/
+
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: 0px;
+    background-color: rgba(0, 255, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right:  8%;
+    top: 30px;
+    font-size: 17px;
+    
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 3.5s;
+    animation: fadein 0.5s, fadeout 0.5s 3.5s;
+}
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+
+
+#imgCurrent{
+  width: 70%;
+  height: 100%;
+}
+.imgdias{
+  width: 90%;  
+}
+
+.detallesActual{
+    text-align: center;
+}
+#back-link {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #0d130e;
+	padding: 0.5em;
+	font-size: 26px;
+	z-index: 10000;
+	border-right: 1px RGBA(255,255,255,0.5) solid;
+	border-bottom: 1px RGBA(255,255,255,0.5) solid;
+}
+#back-link img {
+	display: block;
+	width: 4em;
+	height: auto;
+}
+
+@media (max-width: 1199px) {
+	#back-link {
+		font-size: 20px;
+	}
+}
+@media (max-width: 511px) {
+	#back-link {
+		font-size: 16px;
+	}
+}
+#navbarText{
+  justify-content: space-between;
+}
+.imgdias{
+  padding: 0;
+  margin: 0;
+}
+.card{
+  background-color: transparent;
+  border: transparent;
+}
+#citySelected{
+	padding: 0;
+	margin: 0;
+}
+.col{
+	margin: 0;
+	padding: 0;
+}
+.tal{
+	padding: 0;
+	margin: 0;
+}
